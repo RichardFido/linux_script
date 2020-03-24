@@ -1,0 +1,22 @@
+sudo apt-get update
+sudo apt-get install gcc
+sudo apt-get install g++
+sudo apt-get install cmake
+sudo apt-get install vim
+sudo apt-get install default-jdk
+sudo apt-get install tree
+sudo apt-get install xfce4
+sudo apt-get install zsh
+sudo apt-get install fcitx
+sudo dpkg -i sogoupinyin_2.3.1.0112_amd64.deb
+
+git clone https://github.com/spf13/spf13-vim.git
+cd spf13-vim
+./bootstrap.sh
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+cd -
+
+git clone https://github.com/ohmyzsh/ohmyzsh.git
+cd ohmyzsh/tool
+./install.sh
+cd -
