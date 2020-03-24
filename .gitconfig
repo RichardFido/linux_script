@@ -11,7 +11,7 @@
     mt = mergetool
     cf = config
     line = log --oneline
-    ls = log --pretty=format:\"%C(yellow)%h %C(blude)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+    ls = log --pretty=format:\"%C(yellow)%h %C(blue)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
 [core]
     editor = vim
     symlinks = true
