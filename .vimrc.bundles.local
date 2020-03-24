@@ -1,0 +1,2 @@
+Bundle 'mru.vim'
+Bundle 'jlanzarotta/bufexplorer'

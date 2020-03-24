@@ -1,0 +1,19 @@
+[alias]
+    st = status -uno
+    co = checkout
+    br = branch
+    mg = merge
+    ci = commit
+    md = commit --amend
+    cp = cherry-pick
+    rs = reset --hard HEAD
+    dt = difftool
+    mt = mergetool
+    cf = config
+    line = log --oneline
+    ls = log --pretty=format:\"%C(yellow)%h %C(blude)%ad %C(red)%d %C(reset)%s %C(green)[%cn]\" --decorate --date=short
+[core]
+    editor = vim
+    symlinks = true
+    ;gitproxy = gitproxy
+    autocrlf = input

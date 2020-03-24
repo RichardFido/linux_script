@@ -1,0 +1,29 @@
+colorscheme atom
+
+set ts=4
+
+set expandtab
+autocmd VimEnter * set expandtab
+
+set nospell
+autocmd VimEnter * set nospell
+
+set wrap
+set hidden
+
+let g:syntastic_disabled_filetypes=['python']
+let g:pymode=0
+let g:pymode_syntax=0
+let g:syntastic_check_on_open=0
+let g:pymode_lint_write=0
+
+let NERDTreeWinPos="left"
+let NERDTreeWinSize=24
+let NERDTreeMouseMode=2
+
+map <C-b> :BufExplorer<CR>
+map <C-f> :MRU<CR>
+
+map <F2> <ESC>:NERDTreeToggle<CR>
+map <F3> :close<CR>
+
