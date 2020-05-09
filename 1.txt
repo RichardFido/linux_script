@@ -1,22 +1,160 @@
 sudo apt-get update
 sudo apt-get install gcc
 sudo apt-get install g++
-sudo apt-get install cmake
+#sudo apt-get install cmake
 sudo apt-get install vim
 sudo apt-get install default-jdk
 sudo apt-get install tree
+sudo apt install ranger
 sudo apt-get install xfce4
 sudo apt-get install zsh
 sudo apt-get install fcitx
-sudo dpkg -i sogoupinyin_2.3.1.0112_amd64.deb
+sudo apt-get install autoconf
+sudo apt-get install automake
+sudo apt-get install libtool
+sudo apt-get install patch
+sudo apt-get install net-tools
+sudo apt-get install openssh-server
+sudo apt install docker.io
 
 git clone https://github.com/spf13/spf13-vim.git
 cd spf13-vim
 ./bootstrap.sh
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-cd -
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git
 cd ohmyzsh/tool
 ./install.sh
 cd -
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+cd -
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+
+# openssl-1.1.1 cmake-3.17.0-needed
+sudo apt-get install libssl-dev
+#sudo apt-get install openssl
+wget https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
+tar xvf openssl-1.1.1-pre8.tar.gz
+cd openssl-1.1.1-pre8
+./config --prefix=/usr/local/openssl no-zlib
+make
+sudo make install
+sudo mv /usr/bin/openssl /usr/bin/openssl.bak
+sudo mv /usr/include/openssl /usr/include/openssl.bak
+sudo ln -s /usr/local/openssl/include/openssl /usr/include/openssl
+sudo ln -s /usr/local/openssl/lib/libssl.so.1.1 /usr/local/lib/libssl.so
+sudo ln -s /usr/local/openssl/bin/openssl /usr/bin/openssl
+sudo echo "/usr/local/openssl/lib" >> /etc/ld.so.conf
+
+# cmake-3.17.0 python3.7.5-needed
+tar xvf cmake-3.17.0.tar.gz
+cd cmake-3.17.0
+mkdir build
+cd build
+./configure
+cmake .. -DCMAKE_USE_OPENSSL=OFF
+sudo make install
+
+# python3.7.5
+wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tar.xz
+tar xvf Python-3.7.5.tar.xz
+cd Python-3.7.5
+./configure --with-openssl=/usr/local/openssl
+make -j
+make test
+sudo make install
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+sudo python3 get-pip.py
+sudo pip3 install wheel
+sudo ln -s /usr/local/bin/python3 /usr/bin/python
+
+sudo apt-get install libsqlite3-dev
+sudo apt-get install libffi6
+
+# gnome shell extension
+sudo apt-get install chrome-gnome-shell
+sudo apt install gnome-shell-extensions
+sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+sudo add-apt-repository ppa:dyatlov-igor/sierra-theme
+sudo apt install sierra-gtk-theme
+sudo apt install sierra-gtk-theme-git
+sudo apt install gnome-tweak-tool
+git clone https://gitlab.com/TH3L0N3C0D3R/Internet-Speed-Meter.git ~/.local/share/gnome-shell/extensions/Internet-Speed-Meter@TH3L0N3C0D3R
+sudo apt-get install gnome-shell-extension-weather
+
+# notebook
+sudo apt-get install fprintd libpam-fprintd
+sudo apt-get install ruby
+sudo gpasswd -a $USER input
+sudo apt-get install libinput-tools
+sudo gem install fusuma
+sudo apt-get install xdotool
+fusuma
+#palm
+sudo gem update fusuma
+#bluetooth
+sudo apt install blueman -y
+
+# download tool
+sudo add-apt-repository ppa:plushuang-tw/uget-stable
+sudo apt update
+sudo apt install uget
+sudo apt install aria2
+sudo apt-get install axel
+sudo apt-get install pkg-config
+sudo apt upgrade intltool
+
+# bcompare
+axel http://www.scootersoftware.com/bcompare-4.3.4.24657_amd64.deb -n 100
+sudo dpkg -i bcompare-4.3.4.24657_amd64.deb
+
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+# qv2ray
+#sudo dpkg -i qv2ray_2.4.1-1_amd64.deb
+unzip v2ray-linux-64.zip -d v2ray
+mv v2ray vcore
+mkdir ~/.qv2ray
+cd ~/.qv2ray
+mv vcore ~/.qv2ray
+
+# ccls
+wget -c http://releases.llvm.org/8.0.0/clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz
+tar xvf clang+llvm-8.0.0-x86_64-linux-gnu-ubuntu-18.04.tar.xz
+sudo apt install zlib1g-dev libncurses-dev rapidjson-dev
+git clone --depth=1 --recursive https://github.com/MaskRay/ccls
+
+# genymotion
+sudo apt-get install virtualbox
+sudo chmod u+x genymotion-3.1.0-linux_x64.bin
+sudo ./genymotion-3.1.0-linux_x64.bin
+
+# fsearch
+sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily
+sudo apt-get update
+sudo apt install fsearch-trunk
+
+# Sunlogin
+sudo apt-get install libwebkitgtk-3.0-0
+sudo dpkg -i SunloginClient-10.0.2.24779_amd64.deb
+
+# myBase
+tar xvf myBase-Desktop-Ver735-Linux-amd64.tar.bz2
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
+echo "export LD_LIBRARY_PATH=/home/richard/software/myBase7:$LD_LIBRARY_PATH" >> ~/.zshrc
+sudo chmod -x mybase.desktop
+sudo cp myBase.desktop /usr/share/applications
+
+# vmware-player
+sudo apt install build-essential
+sudo apt install libcanberra-gtk-module
+sudo chmod +x VMware-Player-15.5.2-15785246.x86_64.bundle
+sudo ./VMware-Player-15.5.2-15785246.x86_64.bundle
+sudo vmware-modconfig --console --install-all
+sudo mokutil --disable-validation
+
+sudo apt-get install shutter
+sudo dpkg -i baidunetdisk_linux_3.0.1.2.deb
+sudo dpkg -i sogoupinyin_2.3.1.0112_amd64.deb
