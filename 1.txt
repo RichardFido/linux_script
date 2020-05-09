@@ -1,20 +1,20 @@
-sudo apt-get update
-sudo apt-get install gcc
-sudo apt-get install g++
-#sudo apt-get install cmake
-sudo apt-get install vim
-sudo apt-get install default-jdk
-sudo apt-get install tree
+sudo apt update
+sudo apt install gcc
+sudo apt install g++
+#sudo apt install cmake
+sudo apt install vim
+sudo apt install default-jdk
+sudo apt install tree
 sudo apt install ranger
-sudo apt-get install xfce4
-sudo apt-get install zsh
-sudo apt-get install fcitx
-sudo apt-get install autoconf
-sudo apt-get install automake
-sudo apt-get install libtool
-sudo apt-get install patch
-sudo apt-get install net-tools
-sudo apt-get install openssh-server
+sudo apt install xfce4
+sudo apt install zsh
+sudo apt install fcitx
+sudo apt install autoconf
+sudo apt install automake
+sudo apt install libtool
+sudo apt install patch
+sudo apt install net-tools
+sudo apt install openssh-server
 sudo apt install docker.io
 
 git clone https://github.com/spf13/spf13-vim.git
@@ -31,8 +31,8 @@ cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 # openssl-1.1.1 cmake-3.17.0-needed
-sudo apt-get install libssl-dev
-#sudo apt-get install openssl
+sudo apt install libssl-dev
+#sudo apt install openssl
 wget https://www.openssl.org/source/openssl-1.1.1-pre8.tar.gz
 tar xvf openssl-1.1.1-pre8.tar.gz
 cd openssl-1.1.1-pre8
@@ -68,27 +68,27 @@ sudo python3 get-pip.py
 sudo pip3 install wheel
 sudo ln -s /usr/local/bin/python3 /usr/bin/python
 
-sudo apt-get install libsqlite3-dev
-sudo apt-get install libffi6
+sudo apt install libsqlite3-dev
+sudo apt install libffi6
 
 # gnome shell extension
-sudo apt-get install chrome-gnome-shell
+sudo apt install chrome-gnome-shell
 sudo apt install gnome-shell-extensions
-sudo apt-get install gtk2-engines-murrine gtk2-engines-pixbuf
+sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf
 sudo add-apt-repository ppa:dyatlov-igor/sierra-theme
 sudo apt install sierra-gtk-theme
 sudo apt install sierra-gtk-theme-git
 sudo apt install gnome-tweak-tool
 git clone https://gitlab.com/TH3L0N3C0D3R/Internet-Speed-Meter.git ~/.local/share/gnome-shell/extensions/Internet-Speed-Meter@TH3L0N3C0D3R
-sudo apt-get install gnome-shell-extension-weather
+sudo apt install gnome-shell-extension-weather
 
 # notebook
-sudo apt-get install fprintd libpam-fprintd
-sudo apt-get install ruby
+sudo apt install fprintd libpam-fprintd
+sudo apt install ruby
 sudo gpasswd -a $USER input
-sudo apt-get install libinput-tools
+sudo apt install libinput-tools
 sudo gem install fusuma
-sudo apt-get install xdotool
+sudo apt install xdotool
 fusuma
 #palm
 sudo gem update fusuma
@@ -100,8 +100,8 @@ sudo add-apt-repository ppa:plushuang-tw/uget-stable
 sudo apt update
 sudo apt install uget
 sudo apt install aria2
-sudo apt-get install axel
-sudo apt-get install pkg-config
+sudo apt install axel
+sudo apt install pkg-config
 sudo apt upgrade intltool
 
 # bcompare
@@ -127,17 +127,17 @@ sudo apt install zlib1g-dev libncurses-dev rapidjson-dev
 git clone --depth=1 --recursive https://github.com/MaskRay/ccls
 
 # genymotion
-sudo apt-get install virtualbox
+sudo apt install virtualbox
 sudo chmod u+x genymotion-3.1.0-linux_x64.bin
 sudo ./genymotion-3.1.0-linux_x64.bin
 
 # fsearch
 sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-daily
-sudo apt-get update
+sudo apt update
 sudo apt install fsearch-trunk
 
 # Sunlogin
-sudo apt-get install libwebkitgtk-3.0-0
+sudo apt install libwebkitgtk-3.0-0
 sudo dpkg -i SunloginClient-10.0.2.24779_amd64.deb
 
 # myBase
@@ -155,6 +155,6 @@ sudo ./VMware-Player-15.5.2-15785246.x86_64.bundle
 sudo vmware-modconfig --console --install-all
 sudo mokutil --disable-validation
 
-sudo apt-get install shutter
+sudo apt install shutter
 sudo dpkg -i baidunetdisk_linux_3.0.1.2.deb
 sudo dpkg -i sogoupinyin_2.3.1.0112_amd64.deb
