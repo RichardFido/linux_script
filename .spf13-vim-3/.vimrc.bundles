@@ -193,16 +193,16 @@
 
     " PHP {
         if count(g:spf13_bundle_groups, 'php')
-            Bundle 'spf13/PIV'
-            Bundle 'arnaud-lb/vim-php-namespace'
-            Bundle 'beyondwords/vim-twig'
+            "Bundle 'spf13/PIV'
+            "Bundle 'arnaud-lb/vim-php-namespace'
+            "Bundle 'beyondwords/vim-twig'
         endif
     " }
 
     " Python {
         if count(g:spf13_bundle_groups, 'python')
             " Pick either python-mode or pyflakes & pydoc
-            Bundle 'klen/python-mode'
+            "Bundle 'klen/python-mode'
             Bundle 'yssource/python.vim'
             Bundle 'python_match.vim'
             Bundle 'pythoncomplete'
@@ -229,33 +229,33 @@
 
     " Haskell {
         if count(g:spf13_bundle_groups, 'haskell')
-            Bundle 'travitch/hasksyn'
-            Bundle 'dag/vim2hs'
-            Bundle 'Twinside/vim-haskellConceal'
-            Bundle 'Twinside/vim-haskellFold'
-            Bundle 'lukerandall/haskellmode-vim'
-            Bundle 'eagletmt/neco-ghc'
-            Bundle 'eagletmt/ghcmod-vim'
-            Bundle 'Shougo/vimproc.vim'
-            Bundle 'adinapoli/cumino'
-            Bundle 'bitc/vim-hdevtools'
+            "Bundle 'travitch/hasksyn'
+            "Bundle 'dag/vim2hs'
+            "Bundle 'Twinside/vim-haskellConceal'
+            "Bundle 'Twinside/vim-haskellFold'
+            "Bundle 'lukerandall/haskellmode-vim'
+            "Bundle 'eagletmt/neco-ghc'
+            "Bundle 'eagletmt/ghcmod-vim'
+            "Bundle 'Shougo/vimproc.vim'
+            "Bundle 'adinapoli/cumino'
+            "Bundle 'bitc/vim-hdevtools'
         endif
     " }
 
     " HTML {
         if count(g:spf13_bundle_groups, 'html')
             "Bundle 'amirh/HTML-AutoCloseTag'
-            Bundle 'hail2u/vim-css3-syntax'
-            Bundle 'gorodinskiy/vim-coloresque'
-            Bundle 'tpope/vim-haml'
-            Bundle 'mattn/emmet-vim'
+            "Bundle 'hail2u/vim-css3-syntax'
+            "Bundle 'gorodinskiy/vim-coloresque'
+            "Bundle 'tpope/vim-haml'
+            "Bundle 'mattn/emmet-vim'
         endif
     " }
 
     " Ruby {
         if count(g:spf13_bundle_groups, 'ruby')
-            Bundle 'tpope/vim-rails'
-            let g:rubycomplete_buffer_loading = 1
+            "Bundle 'tpope/vim-rails'
+            "let g:rubycomplete_buffer_loading = 1
             "let g:rubycomplete_classes_in_global = 1
             "let g:rubycomplete_rails = 1
         endif
@@ -263,34 +263,34 @@
 
     " Puppet {
         if count(g:spf13_bundle_groups, 'puppet')
-            Bundle 'rodjek/vim-puppet'
+            "Bundle 'rodjek/vim-puppet'
         endif
     " }
 
     " Go Lang {
         if count(g:spf13_bundle_groups, 'go')
             "Bundle 'Blackrush/vim-gocode'
-            Bundle 'fatih/vim-go'
+            "Bundle 'fatih/vim-go'
         endif
     " }
 
     " Elixir {
         if count(g:spf13_bundle_groups, 'elixir')
-            Bundle 'elixir-lang/vim-elixir'
-            Bundle 'carlosgaldino/elixir-snippets'
-            Bundle 'mattreduce/vim-mix'
+            "Bundle 'elixir-lang/vim-elixir'
+            "Bundle 'carlosgaldino/elixir-snippets'
+            "Bundle 'mattreduce/vim-mix'
         endif
     " }
 
     " Misc {
         if count(g:spf13_bundle_groups, 'misc')
-            Bundle 'rust-lang/rust.vim'
-            Bundle 'tpope/vim-markdown'
-            Bundle 'spf13/vim-preview'
-            Bundle 'tpope/vim-cucumber'
-            Bundle 'cespare/vim-toml'
-            Bundle 'quentindecock/vim-cucumber-align-pipes'
-            Bundle 'saltstack/salt-vim'
+            "Bundle 'rust-lang/rust.vim'
+            "Bundle 'tpope/vim-markdown'
+            "Bundle 'spf13/vim-preview'
+            "Bundle 'tpope/vim-cucumber'
+            "Bundle 'cespare/vim-toml'
+            "Bundle 'quentindecock/vim-cucumber-align-pipes'
+            "Bundle 'saltstack/salt-vim'
         endif
     " }
 
