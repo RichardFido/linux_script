@@ -28,3 +28,12 @@ map <C-f> :MRU<CR>
 map <F2> <ESC>:NERDTreeToggle<CR>
 map <F3> :close<CR>
 
+map <F5> yiw:vimgrep /\c<C-R>0/j %<CR>:copen<CR>
+map <F6> yiw:vimgrep /\c<C-R>0/j **<CR>:copen<CR>
+map <F7> :cp<CR>
+map <F8> :cn<CR>
+
+cnoreabbrev Ack Ack!
+nnoremap <Leader>a :Ack!<Space>
+nnoremap <Leader>s :Ack!<CR>
+let g:ackhighlight = 1

@@ -3,6 +3,7 @@ sudo apt install gcc
 sudo apt install g++
 #sudo apt install cmake
 sudo apt install vim
+sudo apt install silversearcher-ag
 sudo apt install default-jdk
 sudo apt install tree
 sudo apt install ranger
